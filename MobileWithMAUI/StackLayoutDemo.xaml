@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobileWithMAUI.StackLayoutDemo">
+    <ContentPage.Content>
+        <StackLayout Margin="15" Spacing="10">
+            <Label Text="Text 1" FontSize="20" BackgroundColor="Cyan" />
+            <Label Text="Text 2" FontSize="20" BackgroundColor="Blue" />
+            <Label Text="Text 3" FontSize="20" BackgroundColor="Chocolate" />
+            <Label Text="Text 4" FontSize="20" BackgroundColor="Goldenrod" />
+            <StackLayout Margin="15, 20" Spacing="10">
+                <Label Text="sub Text 1" FontSize="20" BackgroundColor="Black" />
+                <Label Text="Sub Text 2" FontSize="20"
+                       BackgroundColor="PaleVioletRed" />
+            </StackLayout>
+            <Frame BackgroundColor="LightGreen" Padding="10" BorderColor="Navy">
+                <StackLayout Margin="15, 20" Spacing="10">
+                    <BoxView BackgroundColor="LightBlue" HeightRequest="50" />
+                    <Label Text="Frame label" FontSize="20"
+                           BackgroundColor="LightCoral">
+                    </Label>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+        <!-- <VerticalStackLayout> -->
+        <!--     <Label Text="Vertical StackLayout" FontSize="20" BackgroundColor="LightCoral" /> -->
+        <!--     <Label Text="Text 1" FontSize="20" BackgroundColor="Cyan" /> -->
+        <!--     <Label Text="Text 2" FontSize="20" BackgroundColor="Blue" /> -->
+        <!--     <Label Text="Text 3" FontSize="20" BackgroundColor="Chocolate" /> -->
+        <!--     <Label Text="Text 4" FontSize="20" BackgroundColor="Goldenrod" /> -->
+        <!-- </VerticalStackLayout> -->
+
+        <!-- <HorizontalStackLayout VerticalOptions="Center"> -->
+        <!--     <Label Text="Age"></Label> -->
+        <!--     <Entry Placeholder="Enter your age" WidthRequest="50" HeightRequest="150"/> -->
+        <!--     <Label Text="Your age, please" TextColor="Red"></Label> -->
+        <!-- </HorizontalStackLayout> -->
+    </ContentPage.Content>
+</ContentPage>
