@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TabbedPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            x:Class="MobileWithMAUI.TabbedPageDemo">
+    <ContentPage Title="Page 1" BackgroundColor="Bisque"
+                 IconImageSource="plus.svg">
+        <StackLayout>
+            <Label Text="Page 1" FontSize="Large" HorizontalOptions="Center"
+                   VerticalOptions="CenterAndExpand" />
+        </StackLayout>
+    </ContentPage>
+    <ContentPage Title="Page 2" BackgroundColor="Black"
+                 IconImageSource="settings.svg">
+        <StackLayout>
+            <Label Text="Page 2" FontSize="Large" HorizontalOptions="Center"
+                   VerticalOptions="CenterAndExpand" />
+        </StackLayout>
+    </ContentPage>
+    <ContentPage Title="Page 3" BackgroundColor="Blue"
+                 IconImageSource="trash.svg">
+        <StackLayout>
+            <Label Text="Page 3" FontSize="Large" HorizontalOptions="Center"
+                   VerticalOptions="CenterAndExpand" />
+        </StackLayout>
+    </ContentPage>
+    <ContentPage Title="Page 4" BackgroundColor="Chartreuse"
+                 IconImageSource="dotnet_bot.png">
+        <StackLayout>
+            <Label Text="Page 4" FontSize="Large" HorizontalOptions="Center"
+                   VerticalOptions="CenterAndExpand" />
+        </StackLayout>
+    </ContentPage>
+</TabbedPage>
