@@ -11,6 +11,6 @@ public partial class App : Application
                 BarBackgroundColor = Colors.Yellow,
                 BarTextColor = Colors.Blue
             };
-        MainPage = new StackLayoutDemo();
+        MainPage = new GridLayoutDemo();
     }
 }
