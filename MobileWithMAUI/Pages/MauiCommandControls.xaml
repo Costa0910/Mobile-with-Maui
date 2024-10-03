@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobileWithMAUI.Pages.MauiCommandControls">
+    <ContentPage.Content>
+        <ScrollView>
+            <VerticalStackLayout Margin="10" Spacing="15">
+
+                <Button Text="Rotate text" Clicked="Button_OnClicked"
+                        BackgroundColor="Aqua" VerticalOptions="Center"
+                        HorizontalOptions="Center">
+                </Button>
+                <Label VerticalOptions="Center" HorizontalOptions="Center"
+                       Text="Hello, MAUI!" TextColor="Bisque" FontSize="Large"
+                       x:Name="TextToRotate" FontAttributes="Bold">
+                </Label>
+
+                <ImageButton Source="dotnet_bot.svg"
+                             x:Name="BtnImgDemo"
+                             BorderColor="Black" Aspect="AspectFill"
+                             Clicked="BtnImgDemo_OnClickedClicked"
+                             HeightRequest="100" WidthRequest="100"
+                             HorizontalOptions="Center"
+                             VerticalOptions="Center" />
+
+                <StackLayout Padding="20">
+                    <Label Text="Qual o seu animal favorito?"
+                           FontSize="Large" TextColor="Blue" />
+                    <RadioButton Content="Gato" Value="Gato"
+                                 GroupName="Pets"
+                                 CheckedChanged="RadioButton_OnCheckedChanged" />
+                    <RadioButton Content="Cachorro"
+                                 Value="Cachorro"
+                                 GroupName="Pets"
+                                 CheckedChanged="RadioButton_OnCheckedChanged" />
+                    <RadioButton Content="Galo"
+                                 Value="Galo" IsChecked="true"
+                                 GroupName="Pets"
+                                 CheckedChanged="RadioButton_OnCheckedChanged" />
+
+                    <Label Text="" x:Name="ShowSelectedPet" FontSize="Large"
+                           TextColor="Green" />
+                </StackLayout>
+
+                <SearchBar Placeholder="Procurar produto"
+                           SearchButtonPressed="SearchBar_OnSearchButtonPressed"
+                           BackgroundColor="Cyan" />
+
+                <SwipeView>
+                    <SwipeView.LeftItems>
+                        <SwipeItems>
+                            <SwipeItem Text="Delete" BackgroundColor="Red"
+                                       Invoked="SwipeItem_OnInvoked" />
+                            <SwipeItem Text="Edit" BackgroundColor="Green"
+                                       Invoked="SwipeItem_OnInvoked" />
+                        </SwipeItems>
+                    </SwipeView.LeftItems>
+
+                    <SwipeView.RightItems>
+                        <SwipeItems>
+                            <SwipeItem Text="Details" BackgroundColor="Blue"
+                                       Invoked="SwipeItem_OnInvoked" />
+                            <SwipeItem Text="Add" BackgroundColor="Yellow"
+                                       Invoked="SwipeItem_OnInvoked" />
+                        </SwipeItems>
+                    </SwipeView.RightItems>
+
+                    <Label Text="Swipe left or right" FontSize="Large"
+                           TextColor="Black" HorizontalOptions="Center"
+                           VerticalOptions="Center" />
+                </SwipeView>
+            </VerticalStackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
