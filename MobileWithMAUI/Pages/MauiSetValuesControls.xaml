@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobileWithMAUI.Pages.MauiSetValuesControls"
+             Title="Maui
+              set values controls">
+    <ContentPage.Content>
+        <ScrollView>
+            <VerticalStackLayout>
+
+                <Label Text="Set values controls" FontSize="20"
+                       HorizontalOptions="Center" />
+
+                <CheckBox x:Name="chkBox" HorizontalOptions="Center"
+                          CheckedChanged="ChkBox_OnCheckedChanged"
+                          IsChecked="False" />
+                <StackLayout Padding="10">
+                    <Label x:Name="DisplaySlicerValue" FontSize="20"
+                           HorizontalOptions="Center" />
+                    <Slider x:Name="Slider" Maximum="20" Minimum="0"
+                            ValueChanged="Slider_OnValueChanged"
+                            MinimumTrackColor="Blue" MaximumTrackColor="Green"
+                            ThumbColor="Brown" />
+                </StackLayout>
+
+                <StackLayout Padding="10">
+                    <Label x:Name="DisplayStepperValue" FontSize="20"
+                           HorizontalOptions="Center" />
+                    <Stepper x:Name="Stepper" Maximum="40" Minimum="0"
+                             ValueChanged="Stepper_OnValueChanged"
+                             Increment="4" />
+                </StackLayout>
+
+                <StackLayout Padding="10">
+                    <Label x:Name="DisplaySwitchValue" FontSize="20"
+                           HorizontalOptions="Center" />
+
+                    <Switch x:Name="Switch" HorizontalOptions="Center"
+                            Toggled="Switch_OnToggled" ThumbColor="Aquamarine"
+                            OnColor="Cornsilk" />
+
+                </StackLayout>
+
+                <DatePicker x:Name="DatePicker" Date="2024/01/01"
+                            MinimumDate="2024/01/01" MaximumDate="2024/12/31"
+                            DateSelected="DatePicker_OnDateSelected"
+                            HorizontalOptions="Center" />
+
+                <TimePicker x:Name="TimePicker" Time="12:00:00"
+                            PropertyChanged="TimePicker_OnPropertyChanged"
+                            Format="HH:mm:ss"
+                            HorizontalOptions="Center" />
+            </VerticalStackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
