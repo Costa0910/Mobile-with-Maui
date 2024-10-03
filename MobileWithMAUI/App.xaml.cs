@@ -1,4 +1,6 @@
-﻿namespace MobileWithMAUI;
+﻿using MobileWithMAUI.Pages;
+
+namespace MobileWithMAUI;
 
 public partial class App : Application
 {
@@ -11,6 +13,6 @@ public partial class App : Application
                 BarBackgroundColor = Colors.Yellow,
                 BarTextColor = Colors.Blue
             };
-        MainPage = new FlexLayoutDemo();
+        MainPage = new AbsoluteLayoutDemo();
     }
 }

@@ -2,8 +2,44 @@
 
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MobileWithMAUI.Pages.MauiPresentationControls">
+             x:Class="MobileWithMAUI.Pages.MauiPresentationControls"
+             Title="Maui Presentation controls">
     <ContentPage.Content>
-        
+        <ScrollView>
+            <VerticalStackLayout Padding="10" Spacing="10">
+                <!-- <BoxView Color= "CornflowerBlue" -->
+                <!-- CornerRadius="10" -->
+                <!-- WidthRequest="160" HeightRequest="160" -->
+                <!-- VerticalOptions="Center" -->
+                <!-- HorizontalOptions="Center" /> -->
+                <!-- <Rectangle Fill="DarkRed" -->
+                <!-- Stroke="Black" StrokeThickness="5" HeightRequest="50" WidthRequest="150" -->
+                <!-- HorizontalOptions="End" -->
+                <!-- RadiusX="10" -->
+                <!-- RadiusY="10"/> -->
+                <Polygon Points="40,10 70,80 10,50"
+                         Fill="LightBlue"
+                         Stroke="DarkBlue" StrokeThickness="5" />
+                <Path Data="M 10,100 L 100,100 100,50Z"
+                      Aspect="Uniform"
+                      HorizontalOptions="Center"
+                      Stroke="Black" />
+
+                <Border Stroke="#C49B33"
+                        StrokeThickness="4"
+                        StrokeShape="RoundRectangle 40,0,0,40"
+                        Background="#2B0B98"
+                        Padding="16,8"
+                        HorizontalOptions="Center">
+                    <Label Text="Bem-Vindo ao .NET MAUI"
+                           TextColor="White"
+                           FontSize="18"
+                           FontAttributes="Bold" />
+                </Border>
+                    <Image Source="dotnet_bot.png" Aspect="AspectFit" />
+
+                <WebView HeightRequest="500" Source="https://armandocosta.tech"/>
+            </VerticalStackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>
