@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobileWithMAUI.FlexLayoutDemo">
+    <ContentPage.Content>
+        <FlexLayout Direction="Column" JustifyContent="SpaceEvenly"
+                    AlignItems="Center">
+            <Label Text="Exemplo de FlexLayout"
+                   FontSize="Large" TextColor="Red" />
+            <Image Source="dotnet_bot.png" />
+            <Button Text="Botão sem função" FontSize="Large" />
+            <Label Text="Costa0910 - 2024" FontSize="Large" />
+        </FlexLayout>
+        <!-- <FlexLayout Direction="Row"> -->
+        <!--     ~1~ Header @1@ -->
+        <!--     <Label Text="Header" FontSize="Large" -->
+        <!--            HorizontalTextAlignment="Center" -->
+        <!--            BackgroundColor="LightBlue" /> -->
+        <!-- -->
+        <!--     ~1~ <!- -Body - -> @1@ -->
+        <!--     <FlexLayout FlexLayout.Grow="1"> -->
+        <!--         <Label Text="Content" FontSize="Large" Background="Gray" -->
+        <!--                HorizontalTextAlignment="Center" -->
+        <!--                VerticalTextAlignment="Center" -->
+        <!--                FlexLayout.Grow="1" /> -->
+        <!--         ~1~ Items @1@ -->
+        <!--         <BoxView FlexLayout.Basis="50" -->
+        <!--                  FlexLayout.Order="-1" -->
+        <!--                  Color="Blue" /> -->
+        <!--         <BoxView FlexLayout.Basis="50" -->
+        <!--                  Color="Green" /> -->
+        <!--     </FlexLayout> -->
+        <!-- -->
+        <!-- Footer  -->
+        <!--     <Label Text="Footer" FontSize="Large" Background="Yellow" -->
+        <!--            HorizontalTextAlignment="Center" /> -->
+        <!-- </FlexLayout> -->
+    </ContentPage.Content>
+</ContentPage>
