@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobileWithMAUI.Pages.MauiEditControls"
+             Title="Maui edit
+              controls">
+    <ContentPage.Content>
+        <StackLayout Padding="10">
+            <ActivityIndicator x:Name="ActivityIndicator"
+                               Color="Red"
+                               IsRunning="{Binding IsBusy}"
+                               VerticalOptions="Center"
+                               HorizontalOptions="Center" />
+
+            <StackLayout Padding="10">
+                <Label Text="Name" FontSize="16" TextColor="Black" />
+                <Entry x:Name="EntryName"
+                       Placeholder="Enter your name"
+                       PlaceholderColor="Bisque"
+                       FontSize="16"
+                       IsReadOnly="False"
+                       MaxLength="20"
+                       IsPassword="False"
+                       Keyboard="Text"
+                       CharacterSpacing="3"
+                       ClearButtonVisibility="WhileEditing" />
+
+                <Label Text="Password" FontSize="16" TextColor="Black"/>
+                <Entry x:Name="EntryPassword"
+                       Placeholder="Enter your password"
+                       PlaceholderColor="Bisque"
+                       FontSize="16"
+                       IsReadOnly="False"
+                       MaxLength="20"
+                       IsPassword="True"
+                       Keyboard="Numeric"
+                       CharacterSpacing="3"
+                       ClearButtonVisibility="WhileEditing"
+                       ReturnType="Search" />
+                </StackLayout>
+                <StackLayout Padding="10">
+                        <Button x:Name="ButtonLogin" Text="Login"
+                                BackgroundColor="Blue"
+                                TextColor="White"
+                                FontSize="16"
+                                CornerRadius="10"
+                                Padding="10"
+                                Margin="10"
+                                HorizontalOptions="FillAndExpand"/>
+                </StackLayout>
+
+            <!-- <Entry x:Name="EntryName" Placeholder="Enter your name" -->
+            <!--        PlaceholderColor="Bisque" FontSize="16" IsReadOnly="False" -->
+            <!--        MaxLength="20" IsPassword="False" Keyboard="Text" -->
+            <!--        CharacterSpacing="3" ClearButtonVisibility="WhileEditing" -->
+            <!--        ReturnType="Search" TextChanged="EntryName_OnTextChanged" -->
+            <!--        Completed="EntryName_OnCompleted" /> -->
+            <!-- -->
+            <!-- <Editor x:Name="EditorDescription" -->
+            <!--         Placeholder="Enter your description" -->
+            <!--         PlaceholderColor="Bisque" FontSize="16" IsReadOnly="False" -->
+            <!--         MaxLength="200" Keyboard="Text" CharacterSpacing="3" -->
+            <!--         AutoSize="TextChanges" /> -->
+            <!-- -->
+            <!-- <StackLayout Padding="40" Spacing="40"> -->
+            <!--     <Label Text="Activity Indicator" FontSize="16" -->
+            <!--            TextColor="Black" /> -->
+            <!--     <ActivityIndicator x:Name="ActivityIndicator" -->
+            <!--                        Color="Red" IsRunning="True" -->
+            <!--                        IsVisible="True" /> -->
+            <!-- </StackLayout> -->
+            <!-- -->
+            <!-- <StackLayout Padding="40" Spacing="40"> -->
+            <!--     <Label Text="Progress Bar" FontSize="16" -->
+            <!--            TextColor="Black" /> -->
+            <!--     <ProgressBar x:Name="ProgressBar" -->
+            <!--                  Progress="0.4" ProgressColor="Red" -->
+            <!--                  BackgroundColor="LightGray" /> -->
+            <!--     <Button Text="Increase Progress" -->
+            <!--             Clicked="Button_OnClicked" /> -->
+            <!-- </StackLayout> -->
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
