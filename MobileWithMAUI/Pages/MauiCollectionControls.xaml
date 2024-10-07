@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobileWithMAUI.Pages.MauiCollectionControls"
+             Title="Maui collection controls">
+    <ContentPage.Content>
+
+        <VerticalStackLayout>
+
+            <TableView>
+                <TableRoot>
+                    <TableSection
+                        Title="Acessórios">
+                        <SwitchCell Text="Ar condicionado Digital"
+                                    On="True">
+                        </SwitchCell>
+                        <SwitchCell Text="Alarme Perimétrico"></SwitchCell>
+                        <SwitchCell Text="Direção Eletro-Hidráulica"></SwitchCell>
+                        <SwitchCell x:Name="AlertaCinto"
+                                    Text="Alerta Cinto de Segurança">
+                        </SwitchCell>
+                        <TextCell Text="Valor Total : 65.900,00"
+                                  TextColor="Black">
+                        </TextCell>
+                        <EntryCell Placeholder="Informe o seu nome"></EntryCell>
+                    </TableSection>
+                </TableRoot>
+            </TableView>
+            <Button x:Name="btnProximo" Text="Avançar"
+                    VerticalOptions="End">
+            </Button>
+
+            <!-- <Label Text="Collection View" FontSize="Large" -->
+            <!--        HorizontalOptions="Center" /> -->
+            <!-- -->
+            <!-- <CarouselView ItemsSource="{Binding Photos}" -->
+            <!--               IndicatorView="IndicatorView"> -->
+            <!--     <CarouselView.ItemTemplate> -->
+            <!--         <DataTemplate> -->
+            <!--             <StackLayout> -->
+            <!--                 <Frame CornerRadius="5" -->
+            <!--                        HorizontalOptions="Center" -->
+            <!--                        VerticalOptions="CenterAndExpand"> -->
+            <!--                     <StackLayout> -->
+            <!--                         <Image Source="{Binding ImageUrl}" -->
+            <!--                                Aspect="AspectFill" -->
+            <!--                                HeightRequest="400" -->
+            <!--                                WidthRequest="400" /> -->
+            <!--                         <Label Text="{Binding Name}" -->
+            <!--                                FontSize="Medium" -->
+            <!--                                HorizontalOptions="Center" /> -->
+            <!--                     </StackLayout> -->
+            <!--                 </Frame> -->
+            <!--             </StackLayout> -->
+            <!--         </DataTemplate> -->
+            <!--     </CarouselView.ItemTemplate> -->
+            <!-- </CarouselView> -->
+            <!-- -->
+            <!-- <IndicatorView x:Name="IndicatorView" -->
+            <!--                IndicatorColor="Gray" -->
+            <!--                IndicatorSize="20" -->
+            <!--                VerticalOptions="Center" IndicatorsShape="Square" -->
+            <!--                HorizontalOptions="CenterAndExpand" -->
+            <!--                SelectedIndicatorColor="Blue" /> -->
+        </VerticalStackLayout>
+
+    </ContentPage.Content>
+</ContentPage>
