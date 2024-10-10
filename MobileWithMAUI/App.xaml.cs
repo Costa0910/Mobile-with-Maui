@@ -1,4 +1,5 @@
-﻿using MobileWithMAUI.Pages;
+﻿using MobileWithMAUI.MauiBindingDemo;
+using MobileWithMAUI.Pages;
 
 namespace MobileWithMAUI;
 
@@ -13,6 +14,6 @@ public partial class App : Application
                 BarBackgroundColor = Colors.Yellow,
                 BarTextColor = Colors.Blue
             };
-        MainPage = new MainPage();
+        MainPage = new NotifyBinding();
     }
 }

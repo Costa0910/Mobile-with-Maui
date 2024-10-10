@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobileWithMAUI.MauiBindingDemo.BindingModes">
+    <ContentPage.Content>
+        <VerticalStackLayout VerticalOptions="Center">
+            <Entry x:Name="Origin"
+                   FontSize="30"
+                   Placeholder="Origin"
+                   Text="Origin" />
+            <Entry x:Name="Destine"
+                   FontSize="30"
+                   Placeholder="Destine"
+                   Text="{ Binding Source = {x:Reference Origin},
+Path=Text , Mode=TwoWay}" />
+        </VerticalStackLayout>
+    </ContentPage.Content>
+</ContentPage>
