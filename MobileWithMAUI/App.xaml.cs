@@ -14,6 +14,6 @@ public partial class App : Application
                 BarBackgroundColor = Colors.Yellow,
                 BarTextColor = Colors.Blue
             };
-        MainPage = new MauiResources.MauiResources();
+        MainPage = new MauiResources.DividirContaApp();
     }
 }
